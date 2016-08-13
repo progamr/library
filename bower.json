@@ -1,0 +1,48 @@
+{
+  "name": "library",
+  "description": "a web application for library managment using node and express framework",
+  "main": "app.js",
+  "authors": [
+    "Amr Mohamed <prog.amr2014@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "node.js",
+    "javascript",
+    "express"
+  ],
+  "homepage": "https://github.com/progamr/library",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css",
+        "less/bootstrap.less"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "less/font-awesome.less",
+        "css/font-awesome.min.css",
+        "scss/font-awesome.scss"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+html
+    head
+        //- bower:css
+        link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/lib/font-awesome/css/font-awesome.min.css')
+        //- endbower
+        //- inject:css
+        link(rel="stylesheet", href="/css/styles.css")
+        //- endinject
+        title my App
+    body(class='MyClass', id='myId')
+        h1 Title of my app
+        p
+            h3 sub heading
+            ul
+                each val in list
+                    li= val
+        //- bower:js
+        script(src='/lib/jquery/dist/jquery.min.js')
+        script(src='/lib/bootstrap/dist/js/bootstrap.min.js')
+        //- endbower
+        //- inject:js
+        script(src="/js/app.js")
+        //- endinject
